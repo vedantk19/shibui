@@ -12,24 +12,37 @@
   margin: 0;
 }
 
+/* intro video section */
+
 .video {
   width: 100%;
   height: auto;
   position: relative;
 }
 
-/* .overlay {
+.overlay {
   position: absolute;
-  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   z-index: 1;
-  margin-top: 32%;
-  margin-left: 38%;
 }
 
 .overlayText {
-  font-size: 100%;
+  opacity: 0;
+  font-size: 4rem;
+  color: cornsilk;
   font-style: italic;
-} */
+  -webkit-transition: opacity 2s ease-in;
+  -moz-transition: opacity 2s ease-in;
+  -ms-transition: opacity 2s ease-in;
+  -o-transition: opacity 2s ease-in;
+  transition: opacity 2s ease-in;
+}
+
+.overlayText-show {
+  opacity: 1;
+}
 
 .body {
   background-color: cornsilk;
@@ -106,6 +119,7 @@
 .toggle-button .bar {
   height: 3px;
   width: 100%;
+  margin-top: 3px;
   background-color: white;
   border-radius: 10px;
   transition: all 0.3s ease-in-out;
@@ -148,6 +162,10 @@ h3 {
 
   .toggle-button {
     display: flex;
+  }
+
+  .shibui {
+    margin-top: 3px;
   }
 
   .navbar-links {
